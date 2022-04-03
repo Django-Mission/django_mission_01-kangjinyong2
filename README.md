@@ -1,4 +1,4 @@
-#basic
+# basic
 django_mission_01-kangjinyong2 created by GitHub Classroom
 ![과제1 basic미션2](https://user-images.githubusercontent.com/66777943/161443001-334ee8bf-c26a-4fa3-aa31-0977f861c3b7.png)
 
