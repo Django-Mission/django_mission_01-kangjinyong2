@@ -1,0 +1,22 @@
+<html>
+    <head></head>
+    <body>
+        <h1>사용자가 만든 계산기 입니다.</h1>
+        계산기 개발중
+        <form action="">
+            <input type="text" name = "num1">
+            <select name="operators">
+            <!--  select는 여러개 중에 하나를 선택할 수 있게 해주는 html태그-->
+                <option value ="+">+</option>
+                <option value ="-">-</option>
+                <option value ="*">*</option>
+                <option value ="/">/</option>
+                <!-- option은 얘를 선택했을 때 어떤 값을 넘겨줄거냐는 뜻 왼쪽은 실제 값 오른쪽은 보여지는 출력 값 -->
+            </select>
+            <input type="text" name = "num2">
+            <input type="submit" >  <!--- 위 세개 값을 입력하고 제출함 , 요청을 보내는 버튼-->
+            <br/>
+            결과값 : {{ result }}
+        </form>
+    </body>
+</html>
