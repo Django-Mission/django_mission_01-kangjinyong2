@@ -15,10 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from demos.views import calculator, lotto # 가져오기
+from demos.views import calculator, lotto,lotto_CH, lottoresult # 가져오기
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('calculator/',calculator), # 첫번째 인자로 들어오면 두번째 함수를 실행시켜라
-    path('lotto/',lotto)
+    path('lotto/',lotto),
+    path('lotto_CH/',lotto_CH),
+    path('lottoresult/',lottoresult,name='lottoresult')
 ]

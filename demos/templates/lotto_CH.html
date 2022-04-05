@@ -1,0 +1,19 @@
+<html>
+    <head>
+            <h1>로또 번호 추출기</h1>
+    </head>
+        <body>
+            <br/> <!--줄바꿈 기능-->
+            <div style='font-size:20px;'> <!--글씨크기 조절-->
+                로또 번호를 받아보세요!
+            </div>
+            <form action="http://127.0.0.1:8000/lottoresult/" mothod=POST>
+                <p>몇개의 게임을 뽑으시겠습니까?
+                    {% csrf_token %}
+                    <input type=number  name="r">
+                    <button type=submit >로또 번호 추출하기</button>
+                <!--<a href="http://127.0.0.1:8000/lottoresult/">로또 번호 추출하기</a>-->
+                <br><br>
+            </form>
+        </body>
+</html>
